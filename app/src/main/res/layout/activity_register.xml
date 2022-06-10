@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="@drawable/gradient_circle"
+    >
+
+    <TextView
+        android:id="@+id/welcome_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/dimen_register_text_position"
+        android:textSize="@dimen/dimen_register_text_size"
+        />
+
+    <ImageView
+        android:id="@+id/image_register_planner"
+        android:layout_width="@dimen/dimen_image_planner"
+        android:layout_height="@dimen/dimen_image_planner"
+        android:layout_below="@id/welcome_register"
+        android:src="@drawable/planner_icon_black"
+        android:contentDescription="@string/image_planner_description"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        />
+
+    <EditText
+        android:id="@+id/username_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_register_planner"
+        android:layout_weight="1"
+        android:hint="@string/username_register_hint"
+        />
+
+    <EditText
+        android:id="@+id/email_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username_input"
+        android:layout_weight="1"
+        android:hint="@string/password_email_hint"
+        />
+
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_input"
+        android:layout_weight="1"
+        android:hint="@string/password_register_hint"
+        />
+
+    <EditText
+        android:id="@+id/password_repeat_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_input"
+        android:layout_weight="1"
+        android:hint="@string/passwordagain_register_hint"
+        />
+
+    <LinearLayout
+        android:id="@+id/take_photo_register"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/password_repeat_input"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/dimen_for_search">
+
+        <TextView
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/photo_input_text"
+            />
+
+        <Button
+            android:id="@+id/btn_photo_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_takephoto"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_register_register"
+        android:textColor="@color/white"
+        android:layout_below="@+id/take_photo_register"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="@dimen/dimen_register_btn_register"
+        android:background="@color/pink_bg"
+        />
+
+    <Button
+        android:id="@+id/btn_register_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_register_exit"
+        android:textColor="@color/white"
+        android:layout_below="@+id/btn_register_register"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:background="@color/pink_bg"
+        android:layout_marginTop="@dimen/dimen_register_btn_register"
+        />
+
+</RelativeLayout>

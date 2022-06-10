@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">DayPlanner</string>
+    <string name="homepage_text">Welcome</string>
+    <string name="btn_homepage_login">LOG IN</string>
+    <string name="btn_homepage_register">REGISTER</string>
+
+    <string name="login_text">Begin your planning</string>
+    <string name="username_login_hint">User name</string>
+    <string name="password_login_hint">••••••••••</string>
+    <string name="btn_login_login">LOG IN</string>
+    <string name="btn_login_exit">EXIT</string>
+
+    <string name="register_text">Begin your planning</string>
+    <string name="btn_register_register">REGISTER</string>
+    <string name="btn_register_exit">EXIT</string>
+    <string name="username_register_hint">User name</string>
+    <string name="password_email_hint">name.lastname@gmail.com</string>
+    <string name="password_register_hint">••••••••••</string>
+    <string name="passwordagain_register_hint">••••••••••</string>
+    <string name="photo_input_text">Take a profile picture</string>
+    <string name="btn_takephoto">PHOTO</string>
+    <string name="obligations_title">To do</string>
+    <string name="btn_search">SEARCH</string>
+    <string name="search_bar_hint">Search obligations...</string>
+
+    <string name="fragment_timer_title">Timer</string>
+    <string name="fragment_recipes_title">Recipes</string>
+    <string name="btn_start">START</string>
+    <string name="btn_stop">STOP</string>
+    <string name="btn_pause">PAUSE</string>
+    <string name="separation">:</string>
+
+    <string name="btn_timer">Timer</string>
+    <string name="btn_recipes">Cake recipes</string>
+    <string name="btn_exit">EXIT</string>
+    <string name="image_planner_description">First page image</string>
+    <string name="url_string">https://jsonkeeper.com/b/TK3H</string>
+    <string name="cake_in_list">CakeName: </string>
+    <string name="cake">cake</string>
+    <string name="difficulty_in_list">Difficulty: </string>
+    <string name="difficulty">difficulty</string>
+    <string name="ingredients_in_list">Ingredients: </string>
+    <string name="ingredients">ingredients</string>
+    <string name="recipe_in_list">Recipe: </string>
+    <string name="recipe">recipe</string>
+</resources>

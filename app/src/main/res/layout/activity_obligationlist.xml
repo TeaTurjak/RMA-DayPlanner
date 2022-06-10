@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ObligationList"
+    android:background="@drawable/gradient_circle">
+
+    <TextView
+        android:id="@+id/obligations_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/obligations_title"
+        android:textSize="@dimen/dimen_obligations_title_size"
+        />
+
+    <LinearLayout
+        android:id="@+id/search_obligations"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/obligations_title"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/dimen_for_search">
+
+        <EditText
+            android:id="@+id/search_obligations_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/search_bar_hint"
+            />
+
+        <Button
+            android:id="@+id/btn_obligations_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_search"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
